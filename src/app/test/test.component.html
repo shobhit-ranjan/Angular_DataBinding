@@ -1,0 +1,49 @@
+<p class="text-success">test works!</p>
+
+
+<h2>
+    welcome {{name}}
+</h2>
+
+<button (click)="onClick()"> Greet</button>
+
+<div>
+    ----------
+</div>
+
+<input #myInput type="text">
+
+---------------
+<button (click)="logMessage(myInput.value)">LOG</button>
+
+
+
+
+<h2>{{10+11}}</h2>
+<h2>{{" welcome" + name}}</h2>
+<h2>{{name.length}}</h2>
+<h2>{{name.toUpperCase()}}</h2>
+<h2>{{user()}}</h2>
+
+
+
+<input [id]="myid" type="text" value="TestId">
+<input id="{{myid}}" type="text" value="Test">
+
+<h2 [class.text-danger]="hasError">Danger</h2>
+
+
+
+<h2 [ngClass]="messageclass">Classes</h2>
+
+
+<h2 [style.color]=" hasError ? 'green' : 'blue' ">Style</h2>
+
+
+
+--------------------------------------------------
+
+
+
+<input [(ngModel)]="twowaybinding" type="text">
+{{twowaybinding}}
